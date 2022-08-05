@@ -399,7 +399,6 @@ const audioButtonMute = document.querySelector('.audio-button-mute')
 audioButtonOn.addEventListener('click',()=>
 {
   audio.pause();
-  audio.currentTime = 0;
   audioButtonOn.classList.add('clicked')
   audioButtonMute.classList.remove('clicked')
 })
