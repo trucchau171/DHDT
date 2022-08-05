@@ -392,4 +392,21 @@
 })();
 
 
-const audio = Document.querySelector('audio')
+const audio = document.querySelector('audio');
+const audioButtonOn = document.querySelector('.audio-button-on')
+const audioButtonMute = document.querySelector('.audio-button-mute')
+
+audioButtonOn.addEventListener('click',()=>
+{
+  audio.pause();
+  audio.currentTime = 0;
+  audioButtonOn.classList.add('clicked')
+  audioButtonMute.classList.remove('clicked')
+})
+
+audioButtonMute.addEventListener('click',()=>
+{
+  audio.play();
+  audioButtonOn.classList.remove('clicked')
+  audioButtonMute.classList.add('clicked')
+})

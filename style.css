@@ -594,7 +594,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
 .info-hotspot .info-hotspot-text {
   position: absolute;
-  width: 300px;
+  width: 500px;
   height: auto;
   max-height: 200px;
   top: 40px;
@@ -833,4 +833,39 @@ body.view-control-buttons .viewControlButton {
 {
   height: 100%;
   width: 100%;
+}
+.info-image-50
+{
+  height: 50%;
+  width: 100%;
+}
+
+.audio
+{
+  display: none;
+}
+
+.audio-button-on
+{
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 3px;
+  background-color: white;
+}
+.audio-button-mute
+{
+  position: absolute;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  box-sizing: border-box;
+  padding: 3px;
+  background-color: white;
+}
+.clicked
+{
+  display: none;
 }
